@@ -1,0 +1,297 @@
+* {
+    padding:0 auto;
+    margin:0 auto;
+    font-family: sans-serif;
+}
+.top-wrapper{
+    margin-left:30px;
+    margin-right:30px;
+}
+html{
+    scroll-behavior: smooth ;
+}
+
+/*header*/
+header{
+    height: 70px;
+    background-color: #696969;
+}
+header h1{
+    float: left;
+    display:inline-block;
+    padding:15px 24px;
+    color:white;
+    font-size: large;
+}
+header h1 a:hover{
+    transition:0.5s;
+    font-size:xx-large;
+}
+header ul li a:hover{
+    color:black;
+    transition: 0.5s;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display:inline-block;
+    padding:24px;
+    color: white;
+}
+.header-left{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.menu-bar{
+    float:right;
+    display: none;
+    padding:24px;
+}
+.menu-bar:hover{
+    cursor:pointer;
+}
+.side-bar{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left:-200px;
+    width: 200px;
+    background-color: rgba(16, 47, 80, 0.9);
+    transition: 0.5s;
+}
+.side-bar ul li{
+    padding:20px;
+    display:inline-block;
+    width:160px;
+    
+}
+.side-bar ul li:hover{
+    background-color:#696969;
+    opacity: 0.3;
+}
+.side-bar ul{
+    padding:0;
+}
+#check{
+    display:none;
+}
+#check:checked~ .side-bar{
+    left:0;
+}
+
+/*home*/
+.banner{
+    padding:50px 0 50px 30px;
+    background-color:#B0C4DE;
+    color:white;
+}
+.banner img{
+    width:100px;
+    border-radius:5px;
+    display: block;
+    margin:0;
+}
+.banner img:hover {
+    box-shadow: 0 0 3px 2px black;
+    transform:scale(1.3);
+    transition: 0.5s;
+}
+.text-content h2{
+    margin-bottom:10px;
+    padding-top: 20px;
+}
+
+/*subjudul*/
+.container h3{
+    padding-top:30px;
+    padding-bottom:20px;
+    text-align:center;
+    margin:20px;
+    position:relative;
+}
+.container h3::before{
+    content: '';
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100px;
+    height:3px;
+    background-color: #00008B;
+    left: 46%;
+}
+.container p{
+    text-align:justify;
+    line-height:25px;
+    margin-bottom:15px;
+}
+
+/*skills*/
+.bar{
+    height:20px;
+    background-color:white;
+    margin:5px 0 20px 0 ;
+    border:1px solid #ddd ;
+}
+.nilai{
+    height:20px;
+    background-color: #4682B4;
+    display:inline-block;
+    text-align:center;
+}
+.html{
+    width:70%;
+}
+.css{
+    width:60%;
+}
+.js{
+    width:10%;
+}
+.sql{
+    width:20%;
+}
+.canva{
+    width:80%;
+}
+.ms.word{
+    width:80%;
+}
+.canva{
+    width:80%
+}
+.word{
+    width: 80%;
+}
+.part1{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.part2{
+    padding-top:30px;
+    padding-bottom:20px;
+    font-weight: bold;
+}
+
+/*hobby*/
+.container #hobby{
+    margin:auto;
+    
+}
+.hobby{
+    width:30.33%;
+    box-sizing: border-box;
+    padding:5px;
+    float:left;
+    margin-left:30px;
+}
+.hobby img{
+    width:100%;
+    border-radius: 20%;
+    border: 1px solid;
+    padding:0;
+}
+.hobby img:hover {
+    box-shadow: 0 0 3px 2px black;
+    transform:scale(1.1);
+    transition: 0.3s;
+  }
+.hobby p{
+    text-align: center;
+}
+
+
+/*contact*/
+.col-4{
+    width:25%;
+    box-sizing: border-box ;
+    float:left;
+    text-align: center;
+    padding:40px 30px;
+    display:inline-block;
+}
+.col-4 h4{
+    padding-bottom:10px;
+    border-bottom: 1px solid;
+    margin-bottom: 15px;
+}
+.col-4 p{
+    text-align: center;
+}
+h4 i{
+    color:black;
+}
+
+/*footer*/
+footer{
+    background-color: #696969;
+    height:35px;
+}
+
+.footer-left{
+    float:left;
+    color:white;
+    padding-top:5px;
+}
+.footer-right{
+    float:right;
+    padding-top:5px;
+}
+
+/* for tablet */
+@media all and (max-width: 1000px){
+    .col-4{
+        width:50%
+    }
+    #skills{
+        width:100%;
+    }
+    .hobby{
+        width: 50%;
+    }
+    .container h3::before{
+        left:43%;
+    }
+    
+}
+
+
+/* for smartphones */
+@media all and (max-width: 670px){
+    .menu-bar{
+        display:block;
+    }
+    header ul{
+        display:none;
+    }
+    .container h3::before{
+        left:40%;
+    }
+    .hobby{
+        width:93%;
+        padding-right: 30px;
+    }
+    .hobby img{
+        width:93%;
+    }
+    .hobby p{
+        text-align: center;
+    }
+    .col-4{
+        width: 100%;
+    }
+    #skills{
+        width:100%;
+    }
+    footer{
+        width: 100%;
+        }
+}
